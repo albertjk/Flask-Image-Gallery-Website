@@ -2,7 +2,7 @@
 
 ## Description
 
-This program was part of my Multimedia Design & Programming coursework at university in October 2017.
+This program was part of my Multimedia Design & Programming coursework at university in California in October 2017.
 
 This is a web application for a small, random image gallery that uses Flask and Bootstrap.
 The home page (route '/') displays three randomly selected images from the 10 provided with the code.
