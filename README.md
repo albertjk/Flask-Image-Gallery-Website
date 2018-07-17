@@ -12,7 +12,7 @@ Each time the page is refreshed, 3 new images, from the group of 10, are display
 
 Here is an example: 
 
-Image1 comes here
+![Example1](https://github.com/albertjk/Flask-Image-Gallery-Website/blob/master/example1.png)
 
 When an image or the title of an image is clicked, Flask routes to '/picture/...', where ... is the image id.
 On the new page the user will see the following:
@@ -23,5 +23,5 @@ On the new page the user will see the following:
 
 Here is an example:
 
-Image2 comes here
+![Example2](https://github.com/albertjk/Flask-Image-Gallery-Website/blob/master/example2.png)
 
