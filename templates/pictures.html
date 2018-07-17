@@ -1,0 +1,24 @@
+<!--
+Author: Albert Jozsa-Kiraly
+This HTML file displays the title and the author of an image, and the actual image
+in full size along with some image information and a link to the home page.
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<!-- Display the title and the author of the image -->
+<h3 style="margin-left:20px">"{{title}}" by {{author}}</h3>
+
+<!-- Display the image -->
+<img src="{{url_for('static', filename=name)}}" class="img-responsive img-rounded" style="margin-left:20px">
+<br>
+
+<!-- Display the image information -->
+<p style="margin-left:20px">{{mode}} image in {{format}} format with width {{width}} and height {{height}}.</p>
+
+<!-- Link to home page -->
+<a href="{{url_for('home')}}" style="margin-left:20px">Back to list of images</a>
+
+{% endblock %}]

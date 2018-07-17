@@ -1,0 +1,40 @@
+<!--
+Author: Albert Jozsa-Kiraly
+This HTML file displays an h1 header, and the titles of the 3 random images
+along with the actual images.
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+
+<h1 style="margin-left:20px">Pictures</h1>
+
+<!-- First random image -->
+<a href="{{url_for('picture1')}}">
+	<h3 style="margin-left:20px">{{titles[0]}}</h3>
+</a>
+<a href="{{url_for('picture1')}}">
+	<img src="{{url_for('static', filename=image_names[0])}}" width="200" class="img-responsive img-rounded" style="margin-left:20px" alt="filename=image_names[0]">
+</a>
+<br>
+
+<!-- Second random image -->
+<a href="{{url_for('picture2')}}">
+	<h3 style="margin-left:20px">{{titles[1]}}</h3>
+</a>
+<a href="{{url_for('picture2')}}">
+	<img src="{{url_for('static', filename=image_names[1])}}" width="200" class="img-responsive img-rounded" style="margin-left:20px" alt="filename=image_names[1]">
+</a>
+<br>
+
+<!-- Third random image -->
+<a href="{{url_for('picture3')}}">
+	<h3 style="margin-left:20px">{{titles[2]}}</h3>
+</a>
+<a href="{{url_for('picture3')}}">
+	<img src="{{url_for('static', filename=image_names[2])}}" width="200" class="img-responsive img-rounded" style="margin-left:20px" alt="filename=image_names[2]">
+</a>
+<br>
+
+{% endblock %}
